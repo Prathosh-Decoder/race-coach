@@ -323,7 +323,7 @@ def build_ctx(conn, rid, changes, *, today=None, texts=None, runner_request=Fals
     for c in changes:
         if c.get("steps"):
             texts += list(c["steps"])
-    runs = engine.run_km_by_day(merged, logs, today)
+    runs = engine.run_km_by_day(merged, logs, today, engine.extra_km_by_day(conn, rid))
     for d, p in merged.items():  # the race itself is the goal, not training load
         if p.get("session_type") == "race":
             runs.pop(d, None)

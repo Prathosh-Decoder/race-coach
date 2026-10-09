@@ -379,7 +379,8 @@ def fallback(conn, rid: int, trigger: str, *, today: date | None = None, why: st
     lg = engine.logs_by_day(conn, rid)
     start, end = _draft_days(today, r)
     changes: list[dict] = []
-    ran = sorted(d for d, x in lg.items() if x["status"] != "missed" and (x["distance_km"] or x["minutes"]))
+    ran = sorted({d for d, x in lg.items() if x["status"] != "missed" and (x["distance_km"] or x["minutes"])}
+                 | set(engine.extra_km_by_day(conn, rid)))
     last = ran[-1] if ran else None
     if start <= end and last and clock.days_between(last, today) >= 7:
         lw = clock.week_start(clock.parse(last))

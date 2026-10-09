@@ -47,6 +47,11 @@ def import_seed(conn, data: dict, today: date | None = None) -> dict:
                         VALUES (?,?,?,?,?,?,?)""",
                      (rid, a["start_day"], a["end_day"], a["kind"], a["can_run"], a.get("climate"), a.get("note")))
     conn.execute("COMMIT")
+    # Plan days before setup that were never logged did not happen in the app: leave them out,
+    # so they neither show as runs nor count towards the safety totals.
+    setup_day = clock.to_sgt(data["runner"].get("created_at") or clock.utc_iso()).date().isoformat()
+    logged = {lg["day"] for lg in data.get("logs", [])}
+    data = {**data, "days": [d for d in data["days"] if d["day"] >= setup_day or d["day"] in logged]}
     res = validator.validate(conn, rid, data["days"], seed=True, today=today or clock.today())
     if not res["ok"]:
         conn.execute("BEGIN")

@@ -1,7 +1,6 @@
 """Plan engine: today's session, paces, prediction, locks, streaks and triggers.
 All numbers shown to the runner are calculated here, never by the model."""
 import json
-import math
 from datetime import date, timedelta
 
 from . import clock
@@ -107,9 +106,24 @@ def logs(conn, rid: int) -> list[dict]:
 
 
 def logs_by_day(conn, rid: int) -> dict[str, dict]:
+    """The log of each day's planned session. Extra runs are kept apart (extra_km_by_day)."""
     out = {}
     for lg in logs(conn, rid):
-        out[lg["day"]] = lg  # latest log for a day wins
+        if not lg.get("extra"):
+            out[lg["day"]] = lg  # latest log for a day wins
+    return out
+
+
+def extra_runs(conn, rid: int) -> list[dict]:
+    return [lg for lg in logs(conn, rid) if lg.get("extra") and lg["status"] != "missed"]
+
+
+def extra_km_by_day(conn, rid: int) -> dict[str, float]:
+    """Runs done outside the plan, per day. They count towards the totals the checks use."""
+    out: dict[str, float] = {}
+    for lg in extra_runs(conn, rid):
+        if lg["distance_km"]:
+            out[lg["day"]] = out.get(lg["day"], 0) + float(lg["distance_km"])
     return out
 
 
@@ -128,13 +142,15 @@ def is_run(plan_row: dict | None) -> bool:
     return bool(plan_row) and plan_row["session_type"] in RUN_TYPES and (plan_row["distance_km"] or 0) > 0
 
 
-def run_km_by_day(plan_rows: dict[str, dict], log_rows: dict[str, dict], today: date) -> dict[str, float]:
-    """Running km per day: logs for past days (and today once logged), the plan otherwise.
+def run_km_by_day(plan_rows: dict[str, dict], log_rows: dict[str, dict], today: date,
+                  extras: dict[str, float] | None = None) -> dict[str, float]:
+    """Running km per day: logs for past days (and today once logged), the plan for today and
+    later. A past day with no log counts as nothing run. Extra runs are added on top.
     Walks and strength are excluded; run-walk counts at full distance."""
     out: dict[str, float] = {}
     t = today.isoformat()
     for d, p in plan_rows.items():
-        if is_run(p):
+        if is_run(p) and d >= t:
             out[d] = float(p["distance_km"])
     for d, lg in log_rows.items():
         p = plan_rows.get(d)
@@ -152,6 +168,9 @@ def run_km_by_day(plan_rows: dict[str, dict], log_rows: dict[str, dict], today: 
                 out[d] = float(km)
             else:
                 out.pop(d, None)
+    for d, km in (extras or {}).items():
+        if d <= t:
+            out[d] = out.get(d, 0) + km
     return out
 
 
@@ -303,7 +322,10 @@ def hard_hold(conn, rid: int, today: date) -> dict | None:
     for lg in reversed(logs(conn, rid)):
         if lg["day"] < lo or lg["status"] == "missed" or not lg["effort"]:
             continue
-        target = TARGET_EFFORT.get(p.get(lg["day"], {}).get("session_type", "easy"), 4)
+        if lg["day"] not in p:  # baseline logs from before the plan have no target
+            continue
+        planned = "easy" if lg.get("extra") else p[lg["day"]]["session_type"]
+        target = TARGET_EFFORT.get(planned, 4)
         if lg["effort"] >= target + 3:
             until = clock.parse(lg["day"]) + timedelta(days=7)
             return {"day": lg["day"], "effort": lg["effort"], "target": target,
@@ -317,17 +339,19 @@ def poor_sleep(conn, rid: int) -> bool:
 
 
 def runwalk_progress(conn, r: dict, today: date) -> dict | None:
-    """Two run-walk sessions at effort 5 or below, pain-free, unlock the next step (R-06)."""
+    """Two run-walk sessions at effort 5 or below, pain-free and with no more breaks than
+    planned, unlock the next step (R-06)."""
     if not r["run_walk"]:
         return None
     p = plan(conn, r["id"])
-    recent = [lg for lg in logs(conn, r["id"]) if lg["day"] <= today.isoformat()
+    recent = [lg for lg in logs(conn, r["id"]) if lg["day"] <= today.isoformat() and not lg.get("extra")
               and lg["status"] == "done" and p.get(lg["day"], {}).get("run_walk") in RW_STEPS]
     if not recent:
         return None
     current = p[recent[-1]["day"]]["run_walk"]
     same = [lg for lg in recent if p[lg["day"]]["run_walk"] == current][-2:]
-    ok = len(same) == 2 and all(lg["effort"] <= 5 and lg["pain"] == "none" for lg in same)
+    ok = len(same) == 2 and all(lg["effort"] <= 5 and lg["pain"] == "none"
+                                and lg.get("breaks") not in ("some", "many") for lg in same)
     i = RW_STEPS.index(current)
     nxt = RW_STEPS[i + 1] if i + 1 < len(RW_STEPS) else None
     return {"current": current, "next": nxt, "unlocked": bool(ok and nxt)}
@@ -351,6 +375,7 @@ def streak(conn, r: dict, today: date) -> int:
     Extra running never adds to it."""
     p = plan(conn, r["id"])
     lg = logs_by_day(conn, r["id"])
+    extra = extra_km_by_day(conn, r["id"])
     start = clock.to_sgt(r["created_at"]).date()
     n = 0
     d = today if today.isoformat() in lg else today - timedelta(days=1)
@@ -361,8 +386,9 @@ def streak(conn, r: dict, today: date) -> int:
         if is_run(pr) or (pr and pr["session_type"] == "walk"):
             if not log or log["status"] == "missed":
                 break
-        elif log and log["status"] != "missed" and (log["distance_km"] or 0) > 0:
-            pass  # ran on a rest day: no credit, no break
+        elif extra.get(k) or (log and log["status"] != "missed" and (log["distance_km"] or 0) > 0):
+            d -= timedelta(days=1)
+            continue  # ran on a rest day: no credit, no break
         n += 1
         d -= timedelta(days=1)
     return n
@@ -515,7 +541,7 @@ def today_view(conn, rid: int, today: date | None = None) -> dict:
         flags.append({"kind": "sleep", "text": "Two poor nights of sleep. Keep the next hard session easy (R-31)."})
     hold = hard_hold(conn, rid, today)
     if hold and today.isoformat() <= hold["until"]:
-        flags.append({"kind": "hold", "text": f"Your run on {hold['day']} felt harder than planned. "
+        flags.append({"kind": "hold", "text": f"Your run on {clock.parse(hold['day']):%a %-d %b} felt harder than planned. "
                       "No distance goes up for 7 days unless you say OK (R-04)."})
     prog = runwalk_progress(conn, r, today)
     if prog and prog["unlocked"]:
@@ -545,7 +571,7 @@ def today_view(conn, rid: int, today: date | None = None) -> dict:
 
 
 def weekly_km(conn, rid: int, today: date, weeks: int = 4) -> list[dict]:
-    runs = run_km_by_day(plan(conn, rid), logs_by_day(conn, rid), today)
+    runs = run_km_by_day(plan(conn, rid), logs_by_day(conn, rid), today, extra_km_by_day(conn, rid))
     mon = clock.week_start(today)
     out = []
     for i in range(weeks, 0, -1):
@@ -556,6 +582,6 @@ def weekly_km(conn, rid: int, today: date, weeks: int = 4) -> list[dict]:
 
 def longest_30(conn, rid: int, today: date) -> float:
     r = runner(conn, rid)
-    runs = run_km_by_day(plan(conn, rid), logs_by_day(conn, rid), today)
+    runs = run_km_by_day(plan(conn, rid), logs_by_day(conn, rid), today, extra_km_by_day(conn, rid))
     past = {d: km for d, km in runs.items() if d <= today.isoformat()}
     return longest_before(past, (today + timedelta(days=1)).isoformat(), r["baseline_longest_km"])
