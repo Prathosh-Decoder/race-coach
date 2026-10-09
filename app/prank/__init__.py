@@ -35,8 +35,8 @@ def extras_for(conn, rid: int, today=None, card: dict | None = None) -> dict | N
     n = (today - pick.EPOCH).days
     if quiet.all_silent(q):
         return out
-    if n % 2 == 0:
-        out["nickname"] = pick.meta(flav, "nickname")
+    out["nickname"] = (pick.meta(flav, "nickname") if n % 2 == 0 else None) or \
+        (pick.lines().get("names") or {}).get(r["name"])
     if q["race_day"]:
         out["greeting"] = pick.line(rid, flav, "race_morning", today)
         return out

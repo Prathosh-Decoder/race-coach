@@ -2,6 +2,12 @@
 # Rules (checked by tests): 80 characters or fewer; nothing about weight, body, looks,
 # age, food or diet; every saved line contains Logged, Saved or Recorded.
 
+# The name in the header while prank mode is on, by profile name. On days the flavour has
+# its own nickname (every other day), that nickname shows instead.
+names:
+  Mom: Mum
+  Prathosh: Prat
+
 goose:
   nickname: silly little goose
   countdown: "{n} sleeps to race"

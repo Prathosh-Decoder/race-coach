@@ -120,3 +120,14 @@ def test_same_line_all_day_new_line_next_day():
     assert a == pick.line(MOM, "goose", "greeting", date(2026, 10, 9))
     days = {pick.line(MOM, "goose", "greeting", date(2026, 10, d)) for d in range(9, 13)}
     assert len(days) == 4
+
+
+def test_prank_names(conn):
+    from tests.conftest import PRATHOSH
+    assert prank.extras_for(conn, MOM) is None  # off: the real name shows
+    for rid, name in ((MOM, "Mum"), (PRATHOSH, "Prat")):
+        state.update(conn, rid, enabled=1, flavour="son")  # "son" has no nickname of its own
+        assert prank.extras_for(conn, rid)["nickname"] == name
+    conn.execute("""INSERT INTO session_log (runner_id, day, status, pain, logged_at)
+                    VALUES (?, '2026-10-09', 'missed', 'sharp', 'x')""", (MOM,))
+    assert prank.extras_for(conn, MOM)["nickname"] is None  # silent during a pain lock
