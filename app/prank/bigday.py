@@ -24,13 +24,12 @@ def view(conn, r: dict, real_card: dict, km: float) -> dict:
     pc = engine.paces(conn, r)
     minutes = engine.estimate_minutes(r, pc, fake)
     rw = engine.runwalk_text(real_card.get("run_walk"))
-    if rw:
-        title = f"Long run-walk {km:g} km"
-        main = f"{rw}, until you reach {km:g} km."
-    else:
-        title = f"Long run {km:g} km"
-        main = f"{km:g} km at an easy, steady effort. Walk 1 minute every 3 km."
-    steps = ["Walk 5 minutes to warm up.", main.capitalize() if rw else main,
-             "Go before 7:30 am and drink when thirsty.",
-             "Cool down: walk 5 minutes, then stretch gently."]
+    title = f"Long run-walk {km:g} km" if rw else f"Long run {km:g} km"
+    # Reuse the real card's own steps with the distance swapped, so the wording matches.
+    real = f"{real_card['distance_km']:g} km"
+    steps = [x.replace(real, f"{km:g} km") for x in real_card["steps"]]
+    if not any(f"{km:g} km" in x for x in steps):
+        main = (f"{rw}, until you reach {km:g} km." if rw
+                else f"{km:g} km at an easy, steady effort. Walk 1 minute every 3 km.")
+        steps.insert(1 if steps else 0, main)
     return {"km": km, "title": title, "steps": steps, "minutes": round(minutes) if minutes else None}

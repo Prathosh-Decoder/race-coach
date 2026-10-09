@@ -1,4 +1,5 @@
 """Singapore date and time helpers. Never use date.today(): it follows the laptop's zone."""
+import os
 from datetime import date, datetime, timedelta, timezone
 from zoneinfo import ZoneInfo
 
@@ -13,7 +14,12 @@ def freeze(dt: datetime | None):
 
 
 def now_utc() -> datetime:
-    return _frozen.astimezone(timezone.utc) if _frozen else datetime.now(timezone.utc)
+    if _frozen:
+        return _frozen.astimezone(timezone.utc)
+    fake = os.environ.get("RACE_COACH_FAKE_NOW")  # preview only, e.g. 2026-10-13T06:30+08:00
+    if fake:
+        return datetime.fromisoformat(fake).astimezone(timezone.utc)
+    return datetime.now(timezone.utc)
 
 
 def now() -> datetime:

@@ -29,3 +29,10 @@ backup kept for 30 days. Set `RACE_COACH_DATA=/some/folder` to use another place
     app/engine.py      sessions, paces, locks  app/coach.py       Ollama client, fallback
     app/clock.py       Singapore time          app/prank/         display-only extras
     app/static/        the screens             rules/brief_v1.yaml  the 36 rules
+
+## Preview a day
+
+To see the app as it will look on another day (for example to try Big Day on a run day),
+start a throwaway copy with its own data folder and a fixed time. Never set this on Mom's laptop.
+
+    RACE_COACH_DATA=/tmp/rc-preview RACE_COACH_FAKE_NOW=2026-10-13T06:30+08:00 .venv/bin/python -m app.main

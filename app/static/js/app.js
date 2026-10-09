@@ -42,12 +42,14 @@
 
   // ---------- the sky band (Singapore time) ----------
 
+  let clockOffset = 0;  // server minus browser, in ms
+
   function sgtParts() {
     const p = new Intl.DateTimeFormat("en-GB", {
       timeZone: "Asia/Singapore", weekday: "short", day: "numeric", month: "short",
-      hour: "numeric", minute: "2-digit", hour12: true }).formatToParts(new Date());
+      hour: "numeric", minute: "2-digit", hour12: true }).formatToParts(new Date(Date.now() + clockOffset));
     const g = (t) => (p.find((x) => x.type === t) || {}).value;
-    const h24 = Number(new Intl.DateTimeFormat("en-GB", { timeZone: "Asia/Singapore", hour: "2-digit", hourCycle: "h23" }).format(new Date()));
+    const h24 = Number(new Intl.DateTimeFormat("en-GB", { timeZone: "Asia/Singapore", hour: "2-digit", hourCycle: "h23" }).format(new Date(Date.now() + clockOffset)));
     const min = Number(g("minute"));
     return { label: `${g("weekday")} ${g("day")} ${g("month")}, ${g("hour")}:${g("minute")} ${(g("dayPeriod") || "").toLowerCase()}`,
              hour: h24 + min / 60 };
@@ -97,6 +99,9 @@
 
   async function refreshToday() {
     S.today = await api(`/api/today?rid=${S.rid}`);
+    const off = new Date(S.today.clock.iso).getTime() - Date.now();
+    clockOffset = Math.abs(off) > 120000 ? off : 0;
+    paintSky();
     paintHeader();
     watchCoach();
     return S.today;
@@ -305,7 +310,7 @@
       ${t.pending ? `<p class="toast">The coach has suggested changes. <a href="#/review">Review changes</a></p>` : ""}
       ${t.unanswered_cards.map((u) => `
         <div class="ask">
-          <p><strong>Did you do it?</strong> ${esc(fmtDay(u.day, { weekday: "long", day: "numeric", month: "short" }))}: ${esc(u.title)}${u.km ? `, ${km(u.km)} km` : ""}</p>
+          <p><strong>Did you do it?</strong> ${esc(fmtDay(u.day, { weekday: "long", day: "numeric", month: "short" }))}: ${esc(u.title)}${u.km && !String(u.title).includes(" km") ? `, ${km(u.km)} km` : ""}</p>
           <div class="btn-row" style="margin-top:0">
             <a class="btn small" href="#/log/${u.day}?s=done">Yes, log it</a>
             <button class="btn quiet small" type="button" data-missed="${u.day}">No, I missed it</button>

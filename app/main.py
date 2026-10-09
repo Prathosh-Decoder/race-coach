@@ -24,6 +24,15 @@ app = FastAPI(title="Race Coach", docs_url=None, redoc_url=None)
 app.mount("/static", StaticFiles(directory=STATIC), name="static")
 
 
+@app.middleware("http")
+async def revalidate_static(request: Request, call_next):
+    """After an update the browser must fetch the new screens, not a cached copy."""
+    response = await call_next(request)
+    if request.url.path.startswith("/static/") and not request.url.path.startswith("/static/fonts/"):
+        response.headers["Cache-Control"] = "no-cache"
+    return response
+
+
 def get_conn():
     conn = db.connect()
     try:
