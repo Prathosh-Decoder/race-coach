@@ -176,9 +176,13 @@ main:focus-visible { outline: none; }
 .steps.plain li::before { display: none; }
 
 .note { margin: var(--s4) 0 0; padding: var(--s3) var(--s4); border-radius: var(--r-md); font-size: 1rem; }
-.note.heat { background: var(--sun-wash); border-left: 4px solid var(--sun); }
-.note.fuel { background: var(--park-wash); border-left: 4px solid var(--park); }
-.note.pain { background: var(--pain-wash); border-left: 4px solid var(--pain); }
+.note.heat { background: var(--sun-wash); --dot: var(--sun); }
+.note.fuel { background: var(--park-wash); --dot: var(--park); }
+.note.pain { background: var(--pain-wash); --dot: var(--pain); }
+.note[class*=" "]:not(.plain)::before, .flags li::before {
+  content: ""; display: inline-block; width: 0.6em; height: 0.6em; border-radius: 50%;
+  background: var(--dot, var(--ink-faint)); margin-right: 0.55em; vertical-align: 0.05em;
+}
 .note.plain { background: var(--paper); }
 .why { margin: var(--s4) 0 0; font-size: 0.95rem; color: var(--ink-soft); }
 .rules { color: var(--ink-faint); white-space: nowrap; }
@@ -248,19 +252,19 @@ textarea.input { min-height: 7rem; resize: vertical; }
 .pace-out span { font-size: 0.9rem; color: var(--ink-soft); }
 .toast {
   margin: 0 0 var(--s5); padding: var(--s4) var(--s5); border-radius: var(--r-md);
-  background: var(--park-wash); border-left: 4px solid var(--park); font-weight: 700;
+  background: var(--park-wash); color: #1F4D41; font-weight: 700;
 }
-.toast.warn { background: var(--pain-wash); border-color: var(--pain); }
+.toast.warn { background: var(--pain-wash); color: #8E1F31; }
 
 /* ---------- flags ---------- */
 
 .flags { list-style: none; margin: 0 0 var(--s5); padding: 0; display: grid; gap: var(--s2); }
 .flags li { padding: var(--s3) var(--s4); border-radius: var(--r-md); background: var(--surface); font-size: 1rem;
-  border-left: 4px solid var(--ink-faint); }
-.flags li[data-kind="pain"] { border-color: var(--pain); }
-.flags li[data-kind="sleep"], .flags li[data-kind="hold"] { border-color: var(--sun); }
-.flags li[data-kind="progress"] { border-color: var(--park); }
-.flags li[data-kind="travel"] { border-color: var(--long); }
+  }
+.flags li[data-kind="pain"] { --dot: var(--pain); background: var(--pain-wash); }
+.flags li[data-kind="sleep"], .flags li[data-kind="hold"] { --dot: var(--sun); }
+.flags li[data-kind="progress"] { --dot: var(--park); }
+.flags li[data-kind="travel"] { --dot: var(--long); }
 
 .ask { background: var(--surface); border-radius: var(--r-md); padding: var(--s4) var(--s5); margin-bottom: var(--s5); }
 .ask p { margin-bottom: var(--s2); }
