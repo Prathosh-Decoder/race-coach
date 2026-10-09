@@ -1,0 +1,1100 @@
+{
+ "runner": {
+  "name": "Mom",
+  "sex": "female",
+  "birth_year": 1980,
+  "height_cm": 159,
+  "weight_kg": 56.5,
+  "level": "starter",
+  "run_walk": 1,
+  "prior_injury": 0,
+  "diet": "none",
+  "diet_confirmed": 0,
+  "has_treadmill": 0,
+  "baseline_week_km": 0,
+  "baseline_longest_km": 2.0,
+  "goal_time_s": 11700,
+  "race_day": "2026-12-05",
+  "first_week": "2026-10-05",
+  "guide": {
+   "jog": "9:00–10:00",
+   "race_jog": [
+    8.75,
+    9.25
+   ],
+   "walk_brisk": "10:30–12:00",
+   "walk": 11.0,
+   "race_ratio": "3:1"
+  },
+  "created_at": "2026-10-09T00:00:00+00:00"
+ },
+ "time_trials": [],
+ "logs": [],
+ "availability": [
+  {
+   "start_day": "2026-10-31",
+   "end_day": "2026-11-09",
+   "kind": "travel",
+   "can_run": 0,
+   "climate": "cool",
+   "note": "Japan, no running"
+  }
+ ],
+ "days": [
+  {
+   "day": "2026-10-05",
+   "session_type": "rest",
+   "distance_km": 0,
+   "location": "none",
+   "run_walk": null,
+   "title": "Rest",
+   "breaks": null,
+   "steps": [
+    "Rest day. A gentle walk is fine."
+   ],
+   "rule_ids": [
+    "R-06"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-10-06",
+   "session_type": "easy",
+   "distance_km": 2.5,
+   "location": "outdoor",
+   "run_walk": "1:1",
+   "title": "Run-walk 2.5 km",
+   "breaks": null,
+   "steps": [
+    "Walk 5 minutes to warm up.",
+    "Jog 1 minute, walk 1 minute, until you reach 2.5 km.",
+    "Go before 7:30 am and drink when thirsty."
+   ],
+   "rule_ids": [
+    "R-06"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-10-07",
+   "session_type": "rest",
+   "distance_km": 0,
+   "location": "none",
+   "run_walk": null,
+   "title": "Rest",
+   "breaks": null,
+   "steps": [
+    "Rest day. A gentle walk is fine."
+   ],
+   "rule_ids": [
+    "R-06"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-10-08",
+   "session_type": "easy",
+   "distance_km": 2.5,
+   "location": "outdoor",
+   "run_walk": "1:1",
+   "title": "Run-walk 2.5 km",
+   "breaks": null,
+   "steps": [
+    "Walk 5 minutes to warm up.",
+    "Jog 1 minute, walk 1 minute, until you reach 2.5 km.",
+    "Go before 7:30 am and drink when thirsty."
+   ],
+   "rule_ids": [
+    "R-06"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-10-09",
+   "session_type": "rest",
+   "distance_km": 0,
+   "location": "none",
+   "run_walk": null,
+   "title": "Rest",
+   "breaks": null,
+   "steps": [
+    "Rest day. A gentle walk is fine."
+   ],
+   "rule_ids": [
+    "R-06"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-10-10",
+   "session_type": "easy",
+   "distance_km": 2.5,
+   "location": "outdoor",
+   "run_walk": "1:1",
+   "title": "Run-walk 2.5 km",
+   "breaks": null,
+   "steps": [
+    "Walk 5 minutes to warm up.",
+    "Jog 1 minute, walk 1 minute, until you reach 2.5 km.",
+    "Go before 7:30 am and drink when thirsty."
+   ],
+   "rule_ids": [
+    "R-06"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-10-11",
+   "session_type": "rest",
+   "distance_km": 0,
+   "location": "none",
+   "run_walk": null,
+   "title": "Rest",
+   "breaks": null,
+   "steps": [
+    "Rest day. A gentle walk is fine."
+   ],
+   "rule_ids": [
+    "R-06"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-10-12",
+   "session_type": "rest",
+   "distance_km": 0,
+   "location": "none",
+   "run_walk": null,
+   "title": "Rest",
+   "breaks": null,
+   "steps": [
+    "Rest day. A gentle walk is fine."
+   ],
+   "rule_ids": [
+    "R-06"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-10-13",
+   "session_type": "easy",
+   "distance_km": 3,
+   "location": "outdoor",
+   "run_walk": "1:1",
+   "title": "Run-walk 3 km",
+   "breaks": null,
+   "steps": [
+    "Walk 5 minutes to warm up.",
+    "Jog 1 minute, walk 1 minute, until you reach 3 km.",
+    "Go before 7:30 am and drink when thirsty."
+   ],
+   "rule_ids": [
+    "R-06"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-10-14",
+   "session_type": "strength",
+   "distance_km": 0,
+   "location": "none",
+   "run_walk": null,
+   "title": "Strength · 20 minutes",
+   "breaks": null,
+   "steps": [
+    "Sit-to-stand × 10, wall push-ups × 10, calf raises × 15.",
+    "2 rounds. Stop before anything hurts."
+   ],
+   "rule_ids": [
+    "R-22"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-10-15",
+   "session_type": "easy",
+   "distance_km": 3,
+   "location": "outdoor",
+   "run_walk": "1:1",
+   "title": "Run-walk 3 km",
+   "breaks": null,
+   "steps": [
+    "Walk 5 minutes to warm up.",
+    "Jog 1 minute, walk 1 minute, until you reach 3 km.",
+    "Go before 7:30 am and drink when thirsty."
+   ],
+   "rule_ids": [
+    "R-06"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-10-16",
+   "session_type": "rest",
+   "distance_km": 0,
+   "location": "none",
+   "run_walk": null,
+   "title": "Rest",
+   "breaks": null,
+   "steps": [
+    "Rest day. A gentle walk is fine."
+   ],
+   "rule_ids": [
+    "R-06"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-10-17",
+   "session_type": "rest",
+   "distance_km": 0,
+   "location": "none",
+   "run_walk": null,
+   "title": "Rest",
+   "breaks": null,
+   "steps": [
+    "Rest day. A gentle walk is fine."
+   ],
+   "rule_ids": [
+    "R-06"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-10-18",
+   "session_type": "long",
+   "distance_km": 4.5,
+   "location": "outdoor",
+   "run_walk": "90/60",
+   "title": "Run-walk 4.5 km",
+   "breaks": null,
+   "steps": [
+    "Walk 5 minutes to warm up.",
+    "Jog 90 seconds, walk 60 seconds, until you reach 4.5 km.",
+    "Go before 7:30 am and drink when thirsty."
+   ],
+   "rule_ids": [
+    "R-06",
+    "R-03"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-10-19",
+   "session_type": "rest",
+   "distance_km": 0,
+   "location": "none",
+   "run_walk": null,
+   "title": "Rest",
+   "breaks": null,
+   "steps": [
+    "Rest day. A gentle walk is fine."
+   ],
+   "rule_ids": [
+    "R-06"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-10-20",
+   "session_type": "easy",
+   "distance_km": 2.5,
+   "location": "outdoor",
+   "run_walk": "90/60",
+   "title": "Run-walk 2.5 km",
+   "breaks": null,
+   "steps": [
+    "Walk 5 minutes to warm up.",
+    "Jog 90 seconds, walk 60 seconds, until you reach 2.5 km.",
+    "Go before 7:30 am and drink when thirsty."
+   ],
+   "rule_ids": [
+    "R-06"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-10-21",
+   "session_type": "strength",
+   "distance_km": 0,
+   "location": "none",
+   "run_walk": null,
+   "title": "Strength · 20 minutes",
+   "breaks": null,
+   "steps": [
+    "Sit-to-stand × 10, wall push-ups × 10, calf raises × 15.",
+    "2 rounds. Stop before anything hurts."
+   ],
+   "rule_ids": [
+    "R-22"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-10-22",
+   "session_type": "race_pace",
+   "distance_km": 2.5,
+   "location": "outdoor",
+   "run_walk": "90/60",
+   "title": "Run-walk 2.5 km · race jog",
+   "breaks": null,
+   "steps": [
+    "Walk 5 minutes to warm up.",
+    "Jog 90 seconds, walk 60 seconds, until you reach 2.5 km.",
+    "Go before 7:30 am and drink when thirsty."
+   ],
+   "rule_ids": [
+    "R-02"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-10-23",
+   "session_type": "rest",
+   "distance_km": 0,
+   "location": "none",
+   "run_walk": null,
+   "title": "Rest",
+   "breaks": null,
+   "steps": [
+    "Rest day. A gentle walk is fine."
+   ],
+   "rule_ids": [
+    "R-06"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-10-24",
+   "session_type": "rest",
+   "distance_km": 0,
+   "location": "none",
+   "run_walk": null,
+   "title": "Rest",
+   "breaks": null,
+   "steps": [
+    "Rest day. A gentle walk is fine."
+   ],
+   "rule_ids": [
+    "R-06"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-10-25",
+   "session_type": "long",
+   "distance_km": 8.5,
+   "location": "outdoor",
+   "run_walk": "2:1",
+   "title": "Long run-walk 8.5 km",
+   "breaks": null,
+   "steps": [
+    "Walk 5 minutes to warm up.",
+    "Jog 2 minutes, walk 1 minute, until you reach 8.5 km.",
+    "Go before 7:30 am and drink when thirsty."
+   ],
+   "rule_ids": [
+    "R-03",
+    "R-05"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-10-26",
+   "session_type": "rest",
+   "distance_km": 0,
+   "location": "none",
+   "run_walk": null,
+   "title": "Rest",
+   "breaks": null,
+   "steps": [
+    "Rest day. A gentle walk is fine."
+   ],
+   "rule_ids": [
+    "R-06"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-10-27",
+   "session_type": "easy",
+   "distance_km": 5,
+   "location": "outdoor",
+   "run_walk": "2:1",
+   "title": "Run-walk 5 km",
+   "breaks": null,
+   "steps": [
+    "Walk 5 minutes to warm up.",
+    "Jog 2 minutes, walk 1 minute, until you reach 5 km.",
+    "Go before 7:30 am and drink when thirsty."
+   ],
+   "rule_ids": [
+    "R-06"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-10-28",
+   "session_type": "strength",
+   "distance_km": 0,
+   "location": "none",
+   "run_walk": null,
+   "title": "Strength · 20 minutes",
+   "breaks": null,
+   "steps": [
+    "Sit-to-stand × 10, wall push-ups × 10, calf raises × 15.",
+    "2 rounds. Stop before anything hurts."
+   ],
+   "rule_ids": [
+    "R-22"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-10-29",
+   "session_type": "long",
+   "distance_km": 11,
+   "location": "outdoor",
+   "run_walk": "2:1",
+   "title": "Long run-walk 11 km · before Japan",
+   "breaks": null,
+   "steps": [
+    "Walk 5 minutes to warm up.",
+    "Jog 2 minutes, walk 1 minute, until you reach 11 km.",
+    "Go before 7:30 am and drink when thirsty.",
+    "Rehearse your in-run snack from about 40 minutes in."
+   ],
+   "rule_ids": [
+    "R-13",
+    "R-19"
+   ],
+   "fuel_rehearsal": true
+  },
+  {
+   "day": "2026-10-30",
+   "session_type": "rest",
+   "distance_km": 0,
+   "location": "none",
+   "run_walk": null,
+   "title": "Rest",
+   "breaks": null,
+   "steps": [
+    "Rest day. A gentle walk is fine."
+   ],
+   "rule_ids": [
+    "R-06"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-10-31",
+   "session_type": "rest",
+   "distance_km": 0,
+   "location": "none",
+   "run_walk": null,
+   "title": "Rest",
+   "breaks": null,
+   "steps": [
+    "Rest day. A gentle walk is fine."
+   ],
+   "rule_ids": [
+    "R-06"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-11-01",
+   "session_type": "rest",
+   "distance_km": 0,
+   "location": "none",
+   "run_walk": null,
+   "title": "Rest",
+   "breaks": null,
+   "steps": [
+    "Rest day. A gentle walk is fine."
+   ],
+   "rule_ids": [
+    "R-06"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-11-02",
+   "session_type": "walk",
+   "distance_km": 0,
+   "location": "outdoor",
+   "run_walk": null,
+   "title": "Walking day",
+   "breaks": null,
+   "steps": [
+    "Japan: a 2–3 hour walking day",
+    "Comfortable shoes, rest when you like."
+   ],
+   "rule_ids": [
+    "R-33"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-11-03",
+   "session_type": "rest",
+   "distance_km": 0,
+   "location": "none",
+   "run_walk": null,
+   "title": "Rest",
+   "breaks": null,
+   "steps": [
+    "Rest day. A gentle walk is fine."
+   ],
+   "rule_ids": [
+    "R-06"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-11-04",
+   "session_type": "rest",
+   "distance_km": 0,
+   "location": "none",
+   "run_walk": null,
+   "title": "Rest",
+   "breaks": null,
+   "steps": [
+    "Rest day. A gentle walk is fine."
+   ],
+   "rule_ids": [
+    "R-06"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-11-05",
+   "session_type": "rest",
+   "distance_km": 0,
+   "location": "none",
+   "run_walk": null,
+   "title": "Rest",
+   "breaks": null,
+   "steps": [
+    "Rest day. A gentle walk is fine."
+   ],
+   "rule_ids": [
+    "R-06"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-11-06",
+   "session_type": "walk",
+   "distance_km": 0,
+   "location": "outdoor",
+   "run_walk": null,
+   "title": "Walking day",
+   "breaks": null,
+   "steps": [
+    "Japan: a 2–3 hour walking day",
+    "Comfortable shoes, rest when you like."
+   ],
+   "rule_ids": [
+    "R-33"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-11-07",
+   "session_type": "rest",
+   "distance_km": 0,
+   "location": "none",
+   "run_walk": null,
+   "title": "Rest",
+   "breaks": null,
+   "steps": [
+    "Rest day. A gentle walk is fine."
+   ],
+   "rule_ids": [
+    "R-06"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-11-08",
+   "session_type": "rest",
+   "distance_km": 0,
+   "location": "none",
+   "run_walk": null,
+   "title": "Rest",
+   "breaks": null,
+   "steps": [
+    "Rest day. A gentle walk is fine."
+   ],
+   "rule_ids": [
+    "R-06"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-11-09",
+   "session_type": "rest",
+   "distance_km": 0,
+   "location": "none",
+   "run_walk": null,
+   "title": "Rest",
+   "breaks": null,
+   "steps": [
+    "Rest day. A gentle walk is fine."
+   ],
+   "rule_ids": [
+    "R-06"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-11-10",
+   "session_type": "easy",
+   "distance_km": 4,
+   "location": "outdoor",
+   "run_walk": "90/60",
+   "title": "First run back · 4 km",
+   "breaks": null,
+   "steps": [
+    "Walk 5 minutes to warm up.",
+    "Jog 90 seconds, walk 60 seconds, until you reach 4 km.",
+    "Go before 7:30 am and drink when thirsty."
+   ],
+   "rule_ids": [
+    "R-33"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-11-11",
+   "session_type": "rest",
+   "distance_km": 0,
+   "location": "none",
+   "run_walk": null,
+   "title": "Rest",
+   "breaks": null,
+   "steps": [
+    "Rest day. A gentle walk is fine."
+   ],
+   "rule_ids": [
+    "R-06"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-11-12",
+   "session_type": "easy",
+   "distance_km": 5,
+   "location": "outdoor",
+   "run_walk": "90/60",
+   "title": "Run-walk 5 km",
+   "breaks": null,
+   "steps": [
+    "Walk 5 minutes to warm up.",
+    "Jog 90 seconds, walk 60 seconds, until you reach 5 km.",
+    "Go before 7:30 am and drink when thirsty."
+   ],
+   "rule_ids": [
+    "R-33"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-11-13",
+   "session_type": "rest",
+   "distance_km": 0,
+   "location": "none",
+   "run_walk": null,
+   "title": "Rest",
+   "breaks": null,
+   "steps": [
+    "Rest day. A gentle walk is fine."
+   ],
+   "rule_ids": [
+    "R-06"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-11-14",
+   "session_type": "rest",
+   "distance_km": 0,
+   "location": "none",
+   "run_walk": null,
+   "title": "Rest",
+   "breaks": null,
+   "steps": [
+    "Rest day. A gentle walk is fine."
+   ],
+   "rule_ids": [
+    "R-06"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-11-15",
+   "session_type": "long",
+   "distance_km": 12,
+   "location": "outdoor",
+   "run_walk": "90/60",
+   "title": "Long run-walk 12 km",
+   "breaks": null,
+   "steps": [
+    "Walk 5 minutes to warm up.",
+    "Jog 90 seconds, walk 60 seconds, until you reach 12 km.",
+    "Go before 7:30 am and drink when thirsty.",
+    "Rehearse your in-run snack from about 40 minutes in."
+   ],
+   "rule_ids": [
+    "R-33",
+    "R-19"
+   ],
+   "fuel_rehearsal": true
+  },
+  {
+   "day": "2026-11-16",
+   "session_type": "rest",
+   "distance_km": 0,
+   "location": "none",
+   "run_walk": null,
+   "title": "Rest",
+   "breaks": null,
+   "steps": [
+    "Rest day. A gentle walk is fine."
+   ],
+   "rule_ids": [
+    "R-06"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-11-17",
+   "session_type": "easy",
+   "distance_km": 5,
+   "location": "outdoor",
+   "run_walk": "2:1",
+   "title": "Run-walk 5 km",
+   "breaks": null,
+   "steps": [
+    "Walk 5 minutes to warm up.",
+    "Jog 2 minutes, walk 1 minute, until you reach 5 km.",
+    "Go before 7:30 am and drink when thirsty."
+   ],
+   "rule_ids": [
+    "R-06"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-11-18",
+   "session_type": "strength",
+   "distance_km": 0,
+   "location": "none",
+   "run_walk": null,
+   "title": "Strength · 20 minutes",
+   "breaks": null,
+   "steps": [
+    "Sit-to-stand × 10, wall push-ups × 10, calf raises × 15.",
+    "2 rounds. Stop before anything hurts."
+   ],
+   "rule_ids": [
+    "R-22"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-11-19",
+   "session_type": "race_pace",
+   "distance_km": 5,
+   "location": "outdoor",
+   "run_walk": "2:1",
+   "title": "Run-walk 5 km · race jog",
+   "breaks": null,
+   "steps": [
+    "Walk 5 minutes to warm up.",
+    "Jog 2 minutes, walk 1 minute, until you reach 5 km.",
+    "Go before 7:30 am and drink when thirsty."
+   ],
+   "rule_ids": [
+    "R-02"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-11-20",
+   "session_type": "rest",
+   "distance_km": 0,
+   "location": "none",
+   "run_walk": null,
+   "title": "Rest",
+   "breaks": null,
+   "steps": [
+    "Rest day. A gentle walk is fine."
+   ],
+   "rule_ids": [
+    "R-06"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-11-21",
+   "session_type": "rest",
+   "distance_km": 0,
+   "location": "none",
+   "run_walk": null,
+   "title": "Rest",
+   "breaks": null,
+   "steps": [
+    "Rest day. A gentle walk is fine."
+   ],
+   "rule_ids": [
+    "R-06"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-11-22",
+   "session_type": "long",
+   "distance_km": 15,
+   "location": "outdoor",
+   "run_walk": "3:1",
+   "title": "Race rehearsal 15 km",
+   "breaks": null,
+   "steps": [
+    "Walk 5 minutes to warm up.",
+    "Jog 3 minutes, walk 1 minute, until you reach 15 km.",
+    "Go before 7:30 am and drink when thirsty.",
+    "Start at 4:30–5 am, like race day.",
+    "Rehearse your race snack."
+   ],
+   "rule_ids": [
+    "R-19",
+    "R-03"
+   ],
+   "fuel_rehearsal": true
+  },
+  {
+   "day": "2026-11-23",
+   "session_type": "rest",
+   "distance_km": 0,
+   "location": "none",
+   "run_walk": null,
+   "title": "Rest",
+   "breaks": null,
+   "steps": [
+    "Rest day. A gentle walk is fine."
+   ],
+   "rule_ids": [
+    "R-06"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-11-24",
+   "session_type": "easy",
+   "distance_km": 5,
+   "location": "outdoor",
+   "run_walk": "3:1",
+   "title": "Run-walk 5 km",
+   "breaks": null,
+   "steps": [
+    "Walk 5 minutes to warm up.",
+    "Jog 3 minutes, walk 1 minute, until you reach 5 km.",
+    "Go before 7:30 am and drink when thirsty."
+   ],
+   "rule_ids": [
+    "R-06"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-11-25",
+   "session_type": "strength",
+   "distance_km": 0,
+   "location": "none",
+   "run_walk": null,
+   "title": "Strength · 20 minutes",
+   "breaks": null,
+   "steps": [
+    "Sit-to-stand × 10, wall push-ups × 10, calf raises × 15.",
+    "2 rounds. Stop before anything hurts."
+   ],
+   "rule_ids": [
+    "R-22"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-11-26",
+   "session_type": "race_pace",
+   "distance_km": 4,
+   "location": "outdoor",
+   "run_walk": "3:1",
+   "title": "Run-walk 4 km · race jog",
+   "breaks": null,
+   "steps": [
+    "Walk 5 minutes to warm up.",
+    "Jog 3 minutes, walk 1 minute, until you reach 4 km.",
+    "Go before 7:30 am and drink when thirsty."
+   ],
+   "rule_ids": [
+    "R-02"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-11-27",
+   "session_type": "rest",
+   "distance_km": 0,
+   "location": "none",
+   "run_walk": null,
+   "title": "Rest",
+   "breaks": null,
+   "steps": [
+    "Rest day. A gentle walk is fine."
+   ],
+   "rule_ids": [
+    "R-06"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-11-28",
+   "session_type": "rest",
+   "distance_km": 0,
+   "location": "none",
+   "run_walk": null,
+   "title": "Rest",
+   "breaks": null,
+   "steps": [
+    "Rest day. A gentle walk is fine."
+   ],
+   "rule_ids": [
+    "R-06"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-11-29",
+   "session_type": "long",
+   "distance_km": 8,
+   "location": "outdoor",
+   "run_walk": "3:1",
+   "title": "Taper run-walk 8 km",
+   "breaks": null,
+   "steps": [
+    "Walk 5 minutes to warm up.",
+    "Jog 3 minutes, walk 1 minute, until you reach 8 km.",
+    "Go before 7:30 am and drink when thirsty."
+   ],
+   "rule_ids": [
+    "R-05"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-11-30",
+   "session_type": "rest",
+   "distance_km": 0,
+   "location": "none",
+   "run_walk": null,
+   "title": "Rest",
+   "breaks": null,
+   "steps": [
+    "Rest day. A gentle walk is fine."
+   ],
+   "rule_ids": [
+    "R-06"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-12-01",
+   "session_type": "race_pace",
+   "distance_km": 3,
+   "location": "outdoor",
+   "run_walk": "3:1",
+   "title": "Run-walk 3 km · race jog",
+   "breaks": null,
+   "steps": [
+    "Walk 5 minutes to warm up.",
+    "Jog 3 minutes, walk 1 minute, until you reach 3 km.",
+    "Go before 7:30 am and drink when thirsty."
+   ],
+   "rule_ids": [
+    "R-12"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-12-02",
+   "session_type": "rest",
+   "distance_km": 0,
+   "location": "none",
+   "run_walk": null,
+   "title": "Rest",
+   "breaks": null,
+   "steps": [
+    "Rest day. A gentle walk is fine."
+   ],
+   "rule_ids": [
+    "R-06"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-12-03",
+   "session_type": "easy",
+   "distance_km": 2,
+   "location": "outdoor",
+   "run_walk": "3:1",
+   "title": "Shakeout 2 km",
+   "breaks": null,
+   "steps": [
+    "Walk 5 minutes to warm up.",
+    "Jog 3 minutes, walk 1 minute, until you reach 2 km.",
+    "Go before 7:30 am and drink when thirsty."
+   ],
+   "rule_ids": [
+    "R-12"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-12-04",
+   "session_type": "rest",
+   "distance_km": 0,
+   "location": "none",
+   "run_walk": null,
+   "title": "Rest",
+   "breaks": null,
+   "steps": [
+    "Rest day. A gentle walk is fine."
+   ],
+   "rule_ids": [
+    "R-06"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-12-05",
+   "session_type": "race",
+   "distance_km": 21.1,
+   "location": "outdoor",
+   "run_walk": "3:1",
+   "title": "adidas Half Marathon",
+   "breaks": null,
+   "steps": [
+    "Flag-off 4:30 am.",
+    "Jog 3 minutes, walk 1 minute, from the start.",
+    "Walk through every water station and drink when thirsty."
+   ],
+   "rule_ids": [
+    "R-12"
+   ],
+   "fuel_rehearsal": false
+  }
+ ],
+ "reconstructed": true
+}

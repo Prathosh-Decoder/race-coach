@@ -1,0 +1,123 @@
+# Every line, by flavour and slot. Edit freely; the app picks changes up on the next start.
+# Rules (checked by tests): 80 characters or fewer; nothing about weight, body, looks,
+# age, food or diet; every saved line contains Logged, Saved or Recorded.
+
+goose:
+  nickname: silly little goose
+  countdown: "{n} sleeps to race"
+  side_label: Side quest
+  sound: honk
+  greeting:
+    - Good morning, silly little goose.
+    - Ready to waddle?
+    - Honk if you're ready.
+    - The flock believes in you.
+  rest:
+    - Feet up today, silly little goose.
+    - Even geese float sometimes.
+  saved:
+    - Saved. Nice waddle.
+    - Logged. Honk honk.
+    - Saved, silly little goose.
+  side_quest:
+    - Find a cloud shaped like a goose.
+    - Do your best goose impression for someone.
+  loading:
+    - Asking the geese…
+  race_morning:
+    - Today the goose flies.
+
+royal:
+  nickname: Your Majesty
+  countdown: "{n} days to go"
+  side_label: Royal duty
+  sound: trumpet
+  greeting:
+    - Good morning, Your Majesty.
+    - Your session awaits, Your Majesty.
+    - The kingdom is ready when you are.
+  rest:
+    - Rest day, by royal decree.
+    - The palace is closed for training today.
+  saved:
+    - Saved to the royal archives.
+    - Logged. The court is pleased.
+  side_quest:
+    - Wave at the neighbours as if it's a parade.
+    - Pick today's official royal song.
+  loading:
+    - Consulting the royal advisers…
+  race_morning:
+    - The kingdom lines the streets for you today.
+
+commentator:
+  nickname: the champion
+  countdown: "{n} days left"
+  side_label: Bonus round
+  sound: cheer
+  greeting:
+    - And she's back!
+    - What a morning for it, folks.
+    - The champion arrives.
+  rest:
+    - Tactical rest day. The experts approve.
+    - The champion is studying the tape.
+  saved:
+    - Logged. What a performance!
+    - Saved. Straight into the highlight reel.
+  side_quest:
+    - Give a post-match interview to the mirror.
+    - Celebrate one small thing like a winning goal.
+  loading:
+    - Checking the replay…
+  race_morning:
+    - It's race day. The whole stadium knows your name.
+
+trailer:
+  nickname: our hero
+  countdown: "{n} days remaining"
+  side_label: Deleted scene
+  sound: bwaam
+  greeting:
+    - In a world… one woman laced up her shoes.
+    - This season… one runner rises.
+    - She came. She ran. She conquered.
+  rest:
+    - Intermission.
+    - "Scene: the hero rests. Dramatic music plays."
+  saved:
+    - Logged. Critics call it a triumph.
+    - Saved. Two thumbs up.
+  side_quest:
+    - Walk into a room in slow motion.
+    - Say 'It's time' dramatically before anything.
+  loading:
+    - Rolling the opening credits…
+  race_morning:
+    - Today… the premiere.
+
+son:
+  nickname: null
+  countdown: "{n} days until race day"
+  side_label: Mission from HQ
+  sound: son
+  greeting:
+    - Your son says you've got this.
+    - "Message from your favourite son: proud of you."
+    - Your son is cheering from the other room.
+  rest:
+    - Rest day. Your son approves.
+    - "Your son says: feet up."
+  saved:
+    - Saved. Your son is pretending not to be impressed.
+    - Logged. Proud son noises.
+  side_quest:
+    - Send your son a thumbs-up.
+    - Tell someone you're training for a half marathon and watch their face.
+  loading:
+    - Asking your son's very clever computer…
+  race_morning:
+    - Your son is right there with you today.
+
+surprise:
+  countdown: "{n} days to the race"

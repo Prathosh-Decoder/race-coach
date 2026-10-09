@@ -1,0 +1,1052 @@
+{
+ "runner": {
+  "name": "Prathosh",
+  "sex": "male",
+  "birth_year": 2004,
+  "height_cm": 171.5,
+  "weight_kg": 62.5,
+  "level": "beginner",
+  "run_walk": 0,
+  "prior_injury": 0,
+  "diet": "no_added_sugar",
+  "diet_confirmed": 1,
+  "has_treadmill": 1,
+  "baseline_week_km": 5,
+  "baseline_longest_km": 5,
+  "goal_time_s": 9900,
+  "race_day": "2026-12-05",
+  "first_week": "2026-10-05",
+  "guide": null,
+  "created_at": "2026-10-09T00:00:00+00:00"
+ },
+ "time_trials": [
+  {
+   "day": "2026-10-08",
+   "distance_km": 5,
+   "time_s": 1920,
+   "setting": "treadmill_flat"
+  }
+ ],
+ "logs": [
+  {
+   "day": "2026-10-08",
+   "status": "done",
+   "distance_km": 5,
+   "minutes": 32,
+   "effort": 9,
+   "location": "treadmill",
+   "pain": "none",
+   "note": "5 km time trial (baseline)"
+  }
+ ],
+ "availability": [
+  {
+   "start_day": "2026-10-31",
+   "end_day": "2026-11-09",
+   "kind": "travel",
+   "can_run": 1,
+   "climate": "cool",
+   "note": "Japan"
+  }
+ ],
+ "days": [
+  {
+   "day": "2026-10-09",
+   "session_type": "rest",
+   "distance_km": 0.0,
+   "location": "none",
+   "run_walk": null,
+   "title": "Rest",
+   "breaks": null,
+   "steps": [
+    "You ran a hard 5K yesterday. Rest today.",
+    "Hydrate, sleep early."
+   ],
+   "rule_ids": [
+    "R-02"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-10-10",
+   "session_type": "easy",
+   "distance_km": 3.0,
+   "location": "treadmill",
+   "run_walk": "continuous",
+   "title": "Easy run-walk",
+   "breaks": "Yes · run 4 min / walk 1 min",
+   "steps": [
+    "Set incline 1%, speed.",
+    "Run 4 min, walk 1 min, repeat until 3 km.",
+    "You should finish feeling you could do it again."
+   ],
+   "rule_ids": [
+    "R-03"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-10-11",
+   "session_type": "long",
+   "distance_km": 5.0,
+   "location": "outdoor",
+   "run_walk": "continuous",
+   "title": "First long run",
+   "breaks": "Yes · walk 1 min every km",
+   "steps": [
+    "Start before 7:30 am.",
+    "Walk 1 minute at every km marker.",
+    "This is slower than your 5K by ~2 min/km. That is the point."
+   ],
+   "rule_ids": [
+    "R-03"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-10-12",
+   "session_type": "rest",
+   "distance_km": 0.0,
+   "location": "none",
+   "run_walk": null,
+   "title": "Rest",
+   "breaks": null,
+   "steps": [
+    "Full rest. Walking is fine. Sleep 8 hours."
+   ],
+   "rule_ids": [
+    "R-02"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-10-13",
+   "session_type": "easy",
+   "distance_km": 3,
+   "location": "treadmill",
+   "run_walk": "continuous",
+   "title": "Easy run",
+   "breaks": "Allowed · 1 min walk if breathing gets hard",
+   "steps": [
+    "Easy 3 km.",
+    "Talk test: full sentences."
+   ],
+   "rule_ids": [
+    "R-03",
+    "R-05"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-10-14",
+   "session_type": "intervals",
+   "distance_km": 5.3,
+   "location": "treadmill",
+   "run_walk": "continuous",
+   "title": "Intervals 6 × 400 m",
+   "breaks": "Yes · 200 m walk between reps",
+   "steps": [
+    "Warm up 1.5 km easy.",
+    "6 × 400 m at the pace below.",
+    "Walk 200 m between each.",
+    "Cool down 1 km easy."
+   ],
+   "rule_ids": [
+    "R-02"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-10-15",
+   "session_type": "strength",
+   "distance_km": 0.0,
+   "location": "gym",
+   "run_walk": null,
+   "title": "No running · strength",
+   "breaks": "Rest 60–90 s between sets",
+   "steps": [
+    "See ‘Thursday strength’ below the calendar.",
+    "Keep it to 30 minutes. Should not leave you sore for Friday."
+   ],
+   "rule_ids": [
+    "R-22"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-10-16",
+   "session_type": "easy",
+   "distance_km": 3,
+   "location": "outdoor",
+   "run_walk": "continuous",
+   "title": "Easy + strides",
+   "breaks": "Yes · walk 40 s after each stride",
+   "steps": [
+    "3 km easy.",
+    "Then 4 × 20 s strides: fast but relaxed, not a sprint.",
+    "Walk 40 s after each."
+   ],
+   "rule_ids": [
+    "R-03",
+    "R-05"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-10-17",
+   "session_type": "rest",
+   "distance_km": 0.0,
+   "location": "none",
+   "run_walk": null,
+   "title": "Rest",
+   "breaks": null,
+   "steps": [
+    "Rest before tomorrow's long run.",
+    "Carb-rich dinner, early sleep."
+   ],
+   "rule_ids": [
+    "R-02"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-10-18",
+   "session_type": "long",
+   "distance_km": 5.5,
+   "location": "outdoor",
+   "run_walk": "continuous",
+   "title": "Long run",
+   "breaks": "Yes · walk 1 min every 2 km",
+   "steps": [
+    "Start before 7:30 am.",
+    "Walk 1 min every 2 km.",
+    "Should feel too slow for the first 3 km."
+   ],
+   "rule_ids": [
+    "R-03",
+    "R-05"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-10-19",
+   "session_type": "rest",
+   "distance_km": 0.0,
+   "location": "none",
+   "run_walk": null,
+   "title": "Rest",
+   "breaks": null,
+   "steps": [
+    "Full rest. Walking is fine. Sleep 8 hours."
+   ],
+   "rule_ids": [
+    "R-02"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-10-20",
+   "session_type": "easy",
+   "distance_km": 4,
+   "location": "treadmill",
+   "run_walk": "continuous",
+   "title": "Easy run",
+   "breaks": "Allowed if needed",
+   "steps": [
+    "Easy 4 km."
+   ],
+   "rule_ids": [
+    "R-03",
+    "R-05"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-10-21",
+   "session_type": "tempo",
+   "distance_km": 5.5,
+   "location": "treadmill",
+   "run_walk": "continuous",
+   "title": "Tempo 2 × 1.25 km",
+   "breaks": "Yes · 2 min walk between blocks",
+   "steps": [
+    "Warm up 1.5 km easy.",
+    "1.25 km at tempo pace, walk 2 min, repeat.",
+    "Cool down 1.5 km easy."
+   ],
+   "rule_ids": [
+    "R-02",
+    "R-05"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-10-22",
+   "session_type": "strength",
+   "distance_km": 0.0,
+   "location": "gym",
+   "run_walk": null,
+   "title": "No running · strength",
+   "breaks": "Rest 60–90 s between sets",
+   "steps": [
+    "See ‘Thursday strength’ below the calendar.",
+    "Keep it to 30 minutes. Should not leave you sore for Friday."
+   ],
+   "rule_ids": [
+    "R-22"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-10-23",
+   "session_type": "easy",
+   "distance_km": 4.0,
+   "location": "outdoor",
+   "run_walk": "continuous",
+   "title": "Easy + strides",
+   "breaks": "Yes · walk 40 s after each stride",
+   "steps": [
+    "4 km easy, then 4 × 20 s strides."
+   ],
+   "rule_ids": [
+    "R-03"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-10-24",
+   "session_type": "rest",
+   "distance_km": 0.0,
+   "location": "none",
+   "run_walk": null,
+   "title": "Rest",
+   "breaks": null,
+   "steps": [
+    "Full rest. Walking is fine. Sleep 8 hours."
+   ],
+   "rule_ids": [
+    "R-02"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-10-25",
+   "session_type": "long",
+   "distance_km": 7.5,
+   "location": "outdoor",
+   "run_walk": "continuous",
+   "title": "Long run",
+   "breaks": "Yes · walk 1 min every 2 km",
+   "steps": [
+    "Start before 7:30 am.",
+    "Walk 1 min every 2 km.",
+    "Drink when thirsty."
+   ],
+   "rule_ids": [
+    "R-03",
+    "R-05"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-10-26",
+   "session_type": "rest",
+   "distance_km": 0.0,
+   "location": "none",
+   "run_walk": null,
+   "title": "Rest",
+   "breaks": null,
+   "steps": [
+    "Full rest. Walking is fine. Sleep 8 hours."
+   ],
+   "rule_ids": [
+    "R-02"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-10-27",
+   "session_type": "easy",
+   "distance_km": 5.0,
+   "location": "outdoor",
+   "run_walk": "continuous",
+   "title": "Easy run",
+   "breaks": "Allowed if needed",
+   "steps": [
+    "Early morning. Talk-test pace."
+   ],
+   "rule_ids": [
+    "R-03"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-10-28",
+   "session_type": "intervals",
+   "distance_km": 6.6,
+   "location": "treadmill",
+   "run_walk": "continuous",
+   "title": "Intervals 3 × 800 m",
+   "breaks": "Yes · 400 m walk/jog between reps",
+   "steps": [
+    "Warm up 1.5 km easy.",
+    "3 × 800 m at interval pace.",
+    "400 m walk or very slow jog between.",
+    "Cool down 1.5 km."
+   ],
+   "rule_ids": [
+    "R-02",
+    "R-05"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-10-29",
+   "session_type": "strength",
+   "distance_km": 0.0,
+   "location": "gym",
+   "run_walk": null,
+   "title": "No running · strength",
+   "breaks": "Rest 60–90 s between sets",
+   "steps": [
+    "See ‘Thursday strength’ below the calendar.",
+    "Keep it to 30 minutes. Should not leave you sore for Friday."
+   ],
+   "rule_ids": [
+    "R-22"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-10-30",
+   "session_type": "easy",
+   "distance_km": 4,
+   "location": "outdoor",
+   "run_walk": "continuous",
+   "title": "Easy + strides",
+   "breaks": "Yes · walk 40 s after each stride",
+   "steps": [
+    "4 km easy, then 4 × 20 s strides."
+   ],
+   "rule_ids": [
+    "R-03",
+    "R-05"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-10-31",
+   "session_type": "rest",
+   "distance_km": 0.0,
+   "location": "none",
+   "run_walk": null,
+   "title": "Rest",
+   "breaks": null,
+   "steps": [
+    "Full rest. Walking is fine. Sleep 8 hours."
+   ],
+   "rule_ids": [
+    "R-02"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-11-01",
+   "session_type": "long",
+   "distance_km": 11.0,
+   "location": "outdoor",
+   "run_walk": "continuous",
+   "title": "Long run",
+   "breaks": "Yes · walk 1 min every 3 km",
+   "steps": [
+    "Start by 6:30 am.",
+    "Walk 1 min every 3 km.",
+    "Rehearse your race fuel: dates, a banana or raisins, from about 40 minutes in."
+   ],
+   "rule_ids": [
+    "R-03",
+    "R-19",
+    "R-21"
+   ],
+   "fuel_rehearsal": true
+  },
+  {
+   "day": "2026-11-02",
+   "session_type": "rest",
+   "distance_km": 0.0,
+   "location": "none",
+   "run_walk": null,
+   "title": "Rest",
+   "breaks": null,
+   "steps": [
+    "Full rest. Walking is fine. Sleep 8 hours."
+   ],
+   "rule_ids": [
+    "R-02"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-11-03",
+   "session_type": "easy",
+   "distance_km": 5.0,
+   "location": "treadmill",
+   "run_walk": "continuous",
+   "title": "Easy run",
+   "breaks": "Allowed if needed",
+   "steps": [
+    "Easy week. Keep it relaxed."
+   ],
+   "rule_ids": [
+    "R-03"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-11-04",
+   "session_type": "time_trial",
+   "distance_km": 7.5,
+   "location": "treadmill",
+   "run_walk": "continuous",
+   "title": "5K time trial",
+   "breaks": "No breaks in the 5K",
+   "steps": [
+    "Same treadmill as your 32:00, 1% incline.",
+    "Warm up 1.5 km easy + 2 strides.",
+    "Run 5 km as fast as you can hold evenly.",
+    "Cool down 1 km.",
+    "Under 30:00 → shave 15 s/km off every zone. Over 32:00 → keep zones, target 2:50–3:00."
+   ],
+   "rule_ids": [
+    "R-25"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-11-05",
+   "session_type": "strength",
+   "distance_km": 0.0,
+   "location": "gym",
+   "run_walk": null,
+   "title": "No running · strength",
+   "breaks": "Rest 60–90 s between sets",
+   "steps": [
+    "See ‘Thursday strength’ below the calendar.",
+    "Keep it to 30 minutes. Should not leave you sore for Friday."
+   ],
+   "rule_ids": [
+    "R-22"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-11-06",
+   "session_type": "easy",
+   "distance_km": 4.0,
+   "location": "outdoor",
+   "run_walk": "continuous",
+   "title": "Easy run",
+   "breaks": "Allowed if needed",
+   "steps": [
+    "Short and easy."
+   ],
+   "rule_ids": [
+    "R-03"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-11-07",
+   "session_type": "rest",
+   "distance_km": 0.0,
+   "location": "none",
+   "run_walk": null,
+   "title": "Rest",
+   "breaks": null,
+   "steps": [
+    "Full rest. Walking is fine. Sleep 8 hours."
+   ],
+   "rule_ids": [
+    "R-02"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-11-08",
+   "session_type": "long",
+   "distance_km": 10.0,
+   "location": "outdoor",
+   "run_walk": "continuous",
+   "title": "Long run, race-pace finish",
+   "breaks": "Yes in first 8 km · none in last 2",
+   "steps": [
+    "8 km easy with a walk every 3 km.",
+    "Last 2 km at race pace. First feel of goal pace."
+   ],
+   "rule_ids": [
+    "R-03"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-11-09",
+   "session_type": "rest",
+   "distance_km": 0.0,
+   "location": "none",
+   "run_walk": null,
+   "title": "Rest",
+   "breaks": null,
+   "steps": [
+    "Full rest. Walking is fine. Sleep 8 hours."
+   ],
+   "rule_ids": [
+    "R-02"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-11-10",
+   "session_type": "easy",
+   "distance_km": 6.0,
+   "location": "treadmill",
+   "run_walk": "continuous",
+   "title": "Easy run",
+   "breaks": "Allowed if needed",
+   "steps": [],
+   "rule_ids": [
+    "R-03"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-11-11",
+   "session_type": "tempo",
+   "distance_km": 8.0,
+   "location": "treadmill",
+   "run_walk": "continuous",
+   "title": "Tempo 2 × 2.5 km",
+   "breaks": "Yes · 3 min walk between blocks",
+   "steps": [
+    "Warm up 1.5 km.",
+    "2.5 km at the pace below, walk 3 min, repeat.",
+    "Cool down 1.5 km."
+   ],
+   "rule_ids": [
+    "R-02"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-11-12",
+   "session_type": "strength",
+   "distance_km": 0.0,
+   "location": "gym",
+   "run_walk": null,
+   "title": "No running · strength",
+   "breaks": "Rest 60–90 s between sets",
+   "steps": [
+    "See ‘Thursday strength’ below the calendar.",
+    "Keep it to 30 minutes. Should not leave you sore for Friday."
+   ],
+   "rule_ids": [
+    "R-22"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-11-13",
+   "session_type": "easy",
+   "distance_km": 5.0,
+   "location": "outdoor",
+   "run_walk": "continuous",
+   "title": "Easy + strides",
+   "breaks": "Yes · walk 40 s after each stride",
+   "steps": [
+    "5 km easy, then 4 × 20 s strides."
+   ],
+   "rule_ids": [
+    "R-03"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-11-14",
+   "session_type": "rest",
+   "distance_km": 0.0,
+   "location": "none",
+   "run_walk": null,
+   "title": "Rest",
+   "breaks": null,
+   "steps": [
+    "Full rest. Walking is fine. Sleep 8 hours."
+   ],
+   "rule_ids": [
+    "R-02"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-11-15",
+   "session_type": "long",
+   "distance_km": 14.0,
+   "location": "outdoor",
+   "run_walk": "continuous",
+   "title": "Long run",
+   "breaks": "Yes · walk 1 min every 3 km",
+   "steps": [
+    "Start by 6 am.",
+    "Rehearse your race fuel: dates, a banana or raisins, from about 40 minutes in.",
+    "Walk 1 min every 3 km."
+   ],
+   "rule_ids": [
+    "R-03",
+    "R-19",
+    "R-21"
+   ],
+   "fuel_rehearsal": true
+  },
+  {
+   "day": "2026-11-16",
+   "session_type": "rest",
+   "distance_km": 0.0,
+   "location": "none",
+   "run_walk": null,
+   "title": "Rest",
+   "breaks": null,
+   "steps": [
+    "Full rest. Walking is fine. Sleep 8 hours."
+   ],
+   "rule_ids": [
+    "R-02"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-11-17",
+   "session_type": "easy",
+   "distance_km": 6.0,
+   "location": "outdoor",
+   "run_walk": "continuous",
+   "title": "Easy run",
+   "breaks": "Allowed if needed",
+   "steps": [
+    "Early morning, talk-test pace."
+   ],
+   "rule_ids": [
+    "R-03"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-11-18",
+   "session_type": "intervals",
+   "distance_km": 8.2,
+   "location": "treadmill",
+   "run_walk": "continuous",
+   "title": "Intervals 4 × 1 km",
+   "breaks": "Yes · 400 m walk between reps",
+   "steps": [
+    "Warm up 1.5 km.",
+    "4 × 1 km at the pace below.",
+    "Walk 400 m between.",
+    "Cool down 1.5 km."
+   ],
+   "rule_ids": [
+    "R-02"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-11-19",
+   "session_type": "strength",
+   "distance_km": 0.0,
+   "location": "gym",
+   "run_walk": null,
+   "title": "No running · strength",
+   "breaks": "Rest 60–90 s between sets",
+   "steps": [
+    "See ‘Thursday strength’ below the calendar.",
+    "Keep it to 30 minutes. Should not leave you sore for Friday."
+   ],
+   "rule_ids": [
+    "R-22"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-11-20",
+   "session_type": "easy",
+   "distance_km": 6.0,
+   "location": "outdoor",
+   "run_walk": "continuous",
+   "title": "Easy with race-pace middle",
+   "breaks": "None in the race-pace block",
+   "steps": [
+    "1.5 km easy.",
+    "3 km at race pace."
+   ],
+   "rule_ids": [
+    "R-03"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-11-21",
+   "session_type": "rest",
+   "distance_km": 0.0,
+   "location": "none",
+   "run_walk": null,
+   "title": "Rest",
+   "breaks": null,
+   "steps": [
+    "Rest. Lay out kit tonight.",
+    "Go to bed early: tomorrow is a race rehearsal."
+   ],
+   "rule_ids": [
+    "R-02"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-11-22",
+   "session_type": "long",
+   "distance_km": 18.0,
+   "location": "outdoor",
+   "run_walk": "continuous",
+   "title": "Peak long run · 18 km (race rehearsal)",
+   "breaks": "Yes · walk 1 min every 3 km",
+   "steps": [
+    "Start 4:30–5 am, like race day.",
+    "Wear race shoes and kit. Carry water or plan a route past taps.",
+    "Rehearse your race fuel: dates, a banana or raisins, from about 40 minutes in.",
+    "Easy the whole way. This is your longest run before the race.",
+    "Any pain during the week, or the 14 km on 15 Nov felt terrible? Cap it at 16 km."
+   ],
+   "rule_ids": [
+    "R-03",
+    "R-19",
+    "R-21"
+   ],
+   "fuel_rehearsal": true
+  },
+  {
+   "day": "2026-11-23",
+   "session_type": "rest",
+   "distance_km": 0.0,
+   "location": "none",
+   "run_walk": null,
+   "title": "Rest",
+   "breaks": null,
+   "steps": [
+    "Full rest. Walking is fine. Sleep 8 hours."
+   ],
+   "rule_ids": [
+    "R-02"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-11-24",
+   "session_type": "easy",
+   "distance_km": 5.0,
+   "location": "treadmill",
+   "run_walk": "continuous",
+   "title": "Easy run",
+   "breaks": "Allowed if needed",
+   "steps": [
+    "Taper starts. Less volume, same intensity."
+   ],
+   "rule_ids": [
+    "R-03"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-11-25",
+   "session_type": "intervals",
+   "distance_km": 6.2,
+   "location": "treadmill",
+   "run_walk": "continuous",
+   "title": "Intervals 3 × 1 km",
+   "breaks": "Yes · 400 m walk between reps",
+   "steps": [
+    "Warm up 1.5 km.",
+    "3 × 1 km at the pace below, 400 m walk between.",
+    "Cool down 1.5 km."
+   ],
+   "rule_ids": [
+    "R-02"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-11-26",
+   "session_type": "strength",
+   "distance_km": 0.0,
+   "location": "gym",
+   "run_walk": null,
+   "title": "No running · light strength",
+   "breaks": null,
+   "steps": [
+    "Bodyweight only: squats, calf raises, planks. 20 min."
+   ],
+   "rule_ids": [
+    "R-22"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-11-27",
+   "session_type": "easy",
+   "distance_km": 4.0,
+   "location": "outdoor",
+   "run_walk": "continuous",
+   "title": "Easy + strides",
+   "breaks": "Yes · walk 40 s after each stride",
+   "steps": [
+    "4 km easy, 4 × 20 s strides."
+   ],
+   "rule_ids": [
+    "R-03"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-11-28",
+   "session_type": "rest",
+   "distance_km": 0.0,
+   "location": "none",
+   "run_walk": null,
+   "title": "Rest",
+   "breaks": null,
+   "steps": [
+    "Full rest. Walking is fine. Sleep 8 hours."
+   ],
+   "rule_ids": [
+    "R-02"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-11-29",
+   "session_type": "long",
+   "distance_km": 10.0,
+   "location": "outdoor",
+   "run_walk": "continuous",
+   "title": "Long run with race pace",
+   "breaks": "Walk only in the easy parts",
+   "steps": [
+    "4 km easy, 4 km race pace, 2 km easy.",
+    "Confidence run. It should feel controlled."
+   ],
+   "rule_ids": [
+    "R-03"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-11-30",
+   "session_type": "rest",
+   "distance_km": 0.0,
+   "location": "none",
+   "run_walk": null,
+   "title": "Rest",
+   "breaks": null,
+   "steps": [
+    "Full rest. Walking is fine. Sleep 8 hours."
+   ],
+   "rule_ids": [
+    "R-02"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-12-01",
+   "session_type": "easy",
+   "distance_km": 5.0,
+   "location": "treadmill",
+   "run_walk": "continuous",
+   "title": "Easy with race-pace km",
+   "breaks": "Yes · 2 min easy jog between race-pace km",
+   "steps": [
+    "1 km easy.",
+    "3 × 1 km at the pace below with 2 min easy between."
+   ],
+   "rule_ids": [
+    "R-03"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-12-02",
+   "session_type": "rest",
+   "distance_km": 0.0,
+   "location": "none",
+   "run_walk": null,
+   "title": "Rest",
+   "breaks": null,
+   "steps": [
+    "Full rest. Walking is fine. Sleep 8 hours."
+   ],
+   "rule_ids": [
+    "R-02"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-12-03",
+   "session_type": "easy",
+   "distance_km": 3.0,
+   "location": "outdoor",
+   "run_walk": "continuous",
+   "title": "Shakeout + strides",
+   "breaks": "Walk after strides",
+   "steps": [
+    "3 km very easy, 4 × 20 s strides.",
+    "Start shifting sleep earlier."
+   ],
+   "rule_ids": [
+    "R-03"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-12-04",
+   "session_type": "rest",
+   "distance_km": 0.0,
+   "location": "none",
+   "run_walk": null,
+   "title": "Rest · race eve",
+   "breaks": null,
+   "steps": [
+    "Collect bib if not done.",
+    "Carb-heavy lunch, normal early dinner. Nothing new.",
+    "Kit, dates or raisins, bib pinned. In bed by 8 pm, alarm 2:30 am."
+   ],
+   "rule_ids": [
+    "R-02"
+   ],
+   "fuel_rehearsal": false
+  },
+  {
+   "day": "2026-12-05",
+   "session_type": "race",
+   "distance_km": 21.1,
+   "location": "outdoor",
+   "run_walk": "continuous",
+   "title": "adidas Half Marathon",
+   "breaks": "Yes · walk 20–30 s at each water station",
+   "steps": [
+    "Flag-off 4:30 am, F1 Pit Building.",
+    "Start slow; settle at race pace by km 4.",
+    "Rehearse your race fuel: dates, a banana or raisins, from about 40 minutes in.",
+    "From km 16, push if you feel good.",
+    "Cut-off 3:45. Finish at National Stadium."
+   ],
+   "rule_ids": [
+    "R-12"
+   ],
+   "fuel_rehearsal": false
+  }
+ ]
+}

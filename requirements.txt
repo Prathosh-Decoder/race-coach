@@ -1,0 +1,8 @@
+fastapi==0.115.12
+uvicorn==0.34.2
+pydantic==2.11.4
+ollama==0.4.8
+httpx==0.28.1
+PyYAML==6.0.2
+tzdata==2025.2
+pytest==8.3.5

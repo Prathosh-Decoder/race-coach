@@ -1,0 +1,220 @@
+# Evidence-Graded Coaching Brief for an AI Half-Marathon Planner, v1.
+# Each rule: id, strength (MUST / SHOULD / MAY), grade (A-D), text, source.
+# Rules marked `text_pending: true` still need their exact wording pasted from the
+# brief. They are kept (so citations to them stay valid) but are NOT sent to the model.
+# A test fails if any MUST rule has no check function in app/validator.py, or the reverse.
+
+rules:
+  - id: R-01
+    strength: SHOULD
+    grade: "?"
+    text_pending: true
+    text: "Wording to be copied from the brief."
+    source: Coaching brief
+  - id: R-02
+    strength: SHOULD
+    grade: C
+    text: >-
+      Beginners do at most two hard sessions (tempo, intervals, race pace, time trial) a week,
+      with at least two days between a hard session and a long run.
+    source: Coaching brief
+  - id: R-03
+    strength: MUST
+    grade: B
+    text: >-
+      No single run may be longer than twice the longest run in the 30 days before it
+      (logs for past days, the plan for future days, the setup baseline if there is none).
+    source: Coaching brief
+  - id: R-04
+    strength: SHOULD
+    grade: B
+    text: >-
+      A run more than 1.1 times the longest run in the previous 30 days is elevated risk and
+      needs the runner's explicit OK.
+    source: Coaching brief
+  - id: R-05
+    strength: MUST
+    grade: C
+    text: >-
+      Weekly running distance (Monday to Sunday, run-walk at full distance, walks excluded)
+      may be at most 1.3 times the week before.
+    source: Coaching brief
+  - id: R-06
+    strength: SHOULD
+    grade: C
+    text: >-
+      Run-walkers progress one ratio step at a time (1:1, 90/60, 2:1, 3:1, 4:1), only after two
+      pain-free sessions at effort 5 or below at the current ratio.
+    source: Coaching brief
+  - id: R-07
+    strength: MUST
+    grade: B
+    text: >-
+      Sharp pain, or pain that changes how you move, stops all running until the runner says
+      it is gone. Never suggest running through pain.
+    source: Coaching brief
+  - id: R-08
+    strength: SHOULD
+    grade: C
+    text: A previous running injury calls for a slower build.
+    source: Coaching brief
+  - id: R-09
+    strength: SHOULD
+    grade: "?"
+    text_pending: true
+    text: "Wording to be copied from the brief."
+    source: Coaching brief
+  - id: R-10
+    strength: SHOULD
+    grade: "?"
+    text_pending: true
+    text: "Wording to be copied from the brief."
+    source: Coaching brief
+  - id: R-11
+    strength: SHOULD
+    grade: "?"
+    text_pending: true
+    text: "Wording to be copied from the brief."
+    source: Coaching brief
+  - id: R-12
+    strength: MUST
+    grade: B
+    text: >-
+      In the 3 days before the race: no tempo, intervals, race pace, long run or time trial,
+      and no run over 5 km.
+    source: Coaching brief
+  - id: R-13
+    strength: SHOULD
+    grade: B
+    text: >-
+      After time away from the heat, re-introduce hot-weather running gradually; long runs
+      before a trip are preferred to long runs straight after it.
+    source: Coaching brief
+  - id: R-14
+    strength: SHOULD
+    grade: C
+    text: In cool climates, run by effort rather than by heat-based paces.
+    source: Coaching brief
+  - id: R-15
+    strength: SHOULD
+    grade: "?"
+    text_pending: true
+    text: "Wording to be copied from the brief."
+    source: Coaching brief
+  - id: R-16
+    strength: MUST
+    grade: A
+    text: >-
+      Every outdoor session shows the heat-illness warning: if you feel confused, unsteady or
+      sick, stop, find shade and cool down.
+    source: Coaching brief
+  - id: R-17
+    strength: SHOULD
+    grade: "?"
+    text_pending: true
+    text: "Wording to be copied from the brief."
+    source: Coaching brief
+  - id: R-18
+    strength: MUST
+    grade: B
+    text: Drink to thirst. Never prescribe fixed drinking amounts.
+    source: Coaching brief
+  - id: R-19
+    strength: SHOULD
+    grade: C
+    text: Rehearse race-day fuel at least three times on long runs before the race.
+    source: Coaching brief
+  - id: R-20
+    strength: SHOULD
+    grade: "?"
+    text_pending: true
+    text: "Wording to be copied from the brief."
+    source: Coaching brief
+  - id: R-21
+    strength: MUST
+    grade: B
+    text: Fuel suggestions come only from the runner's own diet list.
+    source: Coaching brief
+  - id: R-22
+    strength: SHOULD
+    grade: B
+    text: Two strength sessions a week.
+    source: Coaching brief
+  - id: R-23
+    strength: SHOULD
+    grade: "?"
+    text_pending: true
+    text: "Wording to be copied from the brief."
+    source: Coaching brief
+  - id: R-24
+    strength: SHOULD
+    grade: "?"
+    text_pending: true
+    text: "Wording to be copied from the brief."
+    source: Coaching brief
+  - id: R-25
+    strength: SHOULD
+    grade: B
+    text: Predict the half-marathon time from a recent time trial with the Riegel formula, shown as a range.
+    source: Vickers and Vertosick 2016
+  - id: R-26
+    strength: SHOULD
+    grade: C
+    text: Add heat and water-station time to the prediction.
+    source: Ely et al. 2007
+  - id: R-27
+    strength: SHOULD
+    grade: C
+    text: Treadmill runs are set at 1% incline.
+    source: Coaching brief
+  - id: R-28
+    strength: MUST
+    grade: C
+    text: Every completed or partial session is logged with effort (1-10) and minutes.
+    source: Coaching brief
+  - id: R-29
+    strength: SHOULD
+    grade: "?"
+    text_pending: true
+    text: "Wording to be copied from the brief."
+    source: Coaching brief
+  - id: R-30
+    strength: MUST
+    grade: B
+    text: Do not use the acute:chronic workload ratio.
+    source: Coaching brief
+  - id: R-31
+    strength: SHOULD
+    grade: C
+    text: After two or more nights of poor sleep, swap the next hard session for an easy one.
+    source: Coaching brief
+  - id: R-32
+    strength: MUST
+    grade: A
+    text: >-
+      Health screening comes before any plan. Known heart, metabolic or kidney disease, or
+      warning symptoms, need a doctor's clearance first.
+    source: ACSM pre-participation screening
+  - id: R-33
+    strength: SHOULD
+    grade: C
+    text: >-
+      After 7 or more days without running, the first week back starts one run-walk step lower
+      (or about 20% less distance for continuous runners).
+    source: Coaching brief
+  - id: R-34
+    strength: SHOULD
+    grade: "?"
+    text_pending: true
+    text: "Wording to be copied from the brief."
+    source: Coaching brief
+  - id: R-35
+    strength: MUST
+    grade: D
+    text: Every plan change cites at least one rule ID from this brief.
+    source: Coaching brief
+  - id: R-36
+    strength: MUST
+    grade: D
+    text: Runner requests go through the same checks. The runner cannot override a MUST rule.
+    source: Coaching brief
